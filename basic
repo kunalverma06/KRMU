@@ -1,3 +1,61 @@
-this is a basic text file
-and i added a new thing here
-this is a new line
+git bash commands to create a ssh key
+
+ssh-keygen -t ed25519 -C "your email"
+
+eval "$(ssh-agent -s)"
+
+ssh-add ~/.ssh/id_ed25519
+
+clip < ~/.ssh/id_ed25519.pub 
+
+///////////////////////////////////////////////////////////
+To commit changes:
+
+git add .
+git commit -m "Your msg"
+git push origin branch name(master or main)
+
+
+FOR REACT INSTALLATION
+After that to create a project use 
+the following commands in the same directory terminal or command prompt:
+
+
+npm create vite@latest
+enter the name
+choose react
+choose javascript(not SWC)
+type cd name
+npm install 
+npm run dev
+to exit the server ctrl+c
+
+
+
+Installing the pakages 
+Joh packages primarily use honge
+npm i react-icons --save
+npm i react-router-dom
+npm i react-type-animation
+npm i @headlessui/react
+npm i @heroicons/react
+
+/////////////////////////////////////////////////////////////////////
+how will we work on react
+File system
+
+src
+     assets = All the graphical stuff
+     components = Reusable code
+     pages = the jsx files for the multi page window
+
+//////////////////////////////////////////////////////////////////////////
+FOR TAILWIND CSS
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p                                                                                                                                                content: [
+content: [
+    "./index.html",
+    "./src//*.{js,ts,jsx,tsx}",
+  ],
+
